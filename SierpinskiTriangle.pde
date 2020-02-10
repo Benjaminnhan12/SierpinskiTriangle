@@ -10,12 +10,13 @@ public void draw()
 public void sierpinski(int x, int y, int len) 
 {
 	if(len <= 20){
-		triangle(x, y, y/2,len, len, y);
+		// triangle(x, y, x+len/2,0,x+len, y); :O
+		triangle(x, y, x+len/2,y-len,x+len, y);
 	}else{
 		color(200);
-		sierpinski(x,y,len/2); //0,500  250,500
-		sierpinski(len/2,y,len/2);
-		sierpinski(len/4,len/2,len/2);
+		sierpinski(x,y,len/2); 
+		sierpinski(x+len/2,y,len/2);
+		sierpinski(x+len/4,y-len/2,len/2);
 	}
 }
 
