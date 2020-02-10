@@ -1,5 +1,6 @@
  public void setup()
 {
+	background(0);
 	size(500,500);
 }
 public void draw()
@@ -13,7 +14,7 @@ public void sierpinski(int x, int y, int len)
 		// triangle(x, y, x+len/2,0,x+len, y); :O
 		triangle(x, y, x+len/2,y-len,x+len, y);
 	}else{
-		color(200);
+		noStroke();
 		sierpinski(x,y,len/2); 
 		sierpinski(x+len/2,y,len/2);
 		sierpinski(x+len/4,y-len/2,len/2);
