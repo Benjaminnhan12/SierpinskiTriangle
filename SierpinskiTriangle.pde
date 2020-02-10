@@ -21,7 +21,7 @@ public void sierpinski(int x, int y, int len)
 	}
 }
 
-// public void mouseDragged()//optional
-// {
+public void mouseDragged()//optional
+{
 
-// }
+}
